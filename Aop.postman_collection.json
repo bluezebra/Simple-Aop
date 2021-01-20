@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "36cc57e3-0175-450a-84ab-2f98ab9e4063",
+		"name": "Aop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "TenantId",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "UserIdIdentifier",
+						"value": "321",
+						"type": "text"
+					},
+					{
+						"key": "IsAdmin",
+						"value": "True",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": 'title',\r\n    \"Description\": 'description'\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tickets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "IsAdmin",
+						"value": "True",
+						"type": "text"
+					},
+					{
+						"key": "TenantId",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "UserIdIdentifier",
+						"value": "321",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Ticket",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "IsAdmin",
+						"value": "True",
+						"type": "text"
+					},
+					{
+						"key": "UserIdIdentifier",
+						"value": "321",
+						"type": "text"
+					},
+					{
+						"key": "TenantId",
+						"value": "123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/tickets/d0df5da2-8bc0-42af-a13b-a396ef8fa64c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"tickets",
+						"d0df5da2-8bc0-42af-a13b-a396ef8fa64c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Ticket Mediator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "IsAdmin",
+						"value": "True",
+						"type": "text"
+					},
+					{
+						"key": "UserIdIdentifier",
+						"value": "321",
+						"type": "text"
+					},
+					{
+						"key": "TenantId",
+						"value": "123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/tickets-mediator/cf63aa16-18a5-40fb-b289-21a70951ce1d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"tickets-mediator",
+						"cf63aa16-18a5-40fb-b289-21a70951ce1d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tickets Mediator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "IsAdmin",
+						"value": "True",
+						"type": "text"
+					},
+					{
+						"key": "TenantId",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "UserIdIdentifier",
+						"value": "321",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/tickets-mediator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"tickets-mediator"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

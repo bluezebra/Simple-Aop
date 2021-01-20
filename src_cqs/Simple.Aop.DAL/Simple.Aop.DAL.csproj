@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>8.0</LangVersion> 
+    <AssemblyName>Simple.Aop.DAL</AssemblyName>
+    <RootNamespace>Simple.Aop.DAL</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />-->
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.11" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Simple.Aop.Domain\Simple.Aop.Domain.csproj" />
+  </ItemGroup>
+</Project>
