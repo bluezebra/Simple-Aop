@@ -1,4 +1,4 @@
 # CQRS, AoP Domain Event Architecture
 
 
-Comparison of Command Query Separation and Mediator pattern to achieve DDD style Aspect Oriented Programming.
+Example using Azure Functions and Simple Injector to achieve DDD style Aspect Oriented Programming.
